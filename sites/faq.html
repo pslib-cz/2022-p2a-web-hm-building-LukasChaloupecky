@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>FAQ</title>
+
+</head>
+<body>
+    <div class="heading--secondary_web">
+        <nav>
+            <div class="images ">
+                    <a href="../index.html"><img id="logo" alt="logo" src="../media/logo.png"></a>
+                    <a id="hamburger"  class="hamburger-menu" href="javascript:void(0)"><p>MENU</p><img alt="hamburger" src="../media/hamburger.svg"></a>
+                    <div id="corner" class="hamburger-menu-list navbar__menu--hidden"></div>
+            </div>
+            
+            <menu class="hamburger-menu-list navbar__menu--hidden">
+                <a href="../index.html"><li>DOMŮ</li></a>
+                <a href="../index.html#sluzby"><li>SLUŽBY</li></a>
+                <a href="./reference.html"><li >REFERENCE</li></a>
+                <a href="./faq.html"><li id="active" >O NÁS</li></a>
+                <a href="./kontakt.html"><li>KONTAKT</li></a>
+            </menu>
+        </nav>
+        
+    </div>
+    <div class="block--padding">
+        <h2 class="h2--larger">O nás</h2>
+            <p>
+                Společnost <b>HM Building.cz s.r.o.</b> nabízí své <b>služby ve stavebnictví od roku 2015</b>, a to převážně <b>po Libereckém kraji.</b></p>
+
+            <p>V oboru pozemního stavitelství <b>provádíme stavbu a rekonstrukci:</b></p>
+            
+            <ul>
+                <li>
+                    Průmyslových staven
+                </li>
+                <li>
+                    obytných staveb
+                </li>
+                <li>
+                    staveb občanské vybavenosti
+                </li>
+                <li>
+                    komunikací vozidlových, ale i pěších
+                </li>
+            </ul>
+            <p>Zakázky můžeme řešit tzv. <b>na klíč</b>, kde jsme schopni zajistit dodávky a montáž elektroinstalace NN a VN, zdravotně – technické instalace, ústředního vytápění, vzduchotechniky, MaR, případně jsme schopni, po dohodě s investorem, dodat pouze některou ucelenou část celkové zakázky.</p>
+
+                <p>Naše firma taktéž zajišťuje <b>projekční služby a služby týkající se statického posouzení staveb</b> v oboru pozemního stavitelství a dále jsme schopni zajistit <b>investorsko–inženýrské služby.</b></p>
+                
+                
+                <p><b>Záruční doba</b> na námi provedená díla se pohybuje od 24 do 60 měsíců.</p></div>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+            for (const btn of hamburgerButtons) {
+              btn.onclick = (event) => {
+                const menus = document.querySelectorAll(".hamburger-menu-list");
+                for (const menu of menus) {
+                  menu.classList.toggle("navbar__menu--hidden");
+                }
+                
+              }
+            }
+          </script>
+          <div class="footer">
+            <p class="footer__title">Plácneme si pro Váš projekt?</p>
+            <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+            <a href="./kontakt.html"><button class="button button--white">Nazávazně poptat</button></a>
+        </div>
+</body>
+</html>

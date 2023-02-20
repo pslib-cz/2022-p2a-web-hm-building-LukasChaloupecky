@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Novostavby</title>
+</head>
+<body>
+    <div class="heading--secondary_web">
+        <nav>
+            <div class="images ">
+                    <a href="../index.html"><img id="logo" alt="logo" src="../media/logo.png"></a>
+                    <a id="hamburger"  class="hamburger-menu" href="javascript:void(0)"><p>MENU</p><img alt="hamburger" src="../media/hamburger.svg"></a>
+                    <div id="corner" class="hamburger-menu-list navbar__menu--hidden"></div>
+            </div>
+            
+            <menu class="hamburger-menu-list navbar__menu--hidden">
+                <a href="../index.html"><li>DOMŮ</li></a>
+                <a href="../index.html#sluzby"><li id="active">SLUŽBY</li></a>
+                <a href="./reference.html"><li >REFERENCE</li></a>
+                <a href="./faq.html"><li >O NÁS</li></a>
+                <a href="./kontakt.html"><li>KONTAKT</li></a>
+            </menu>
+        </nav>
+        
+    </div>
+    <div class="block--padding">
+        <h2 class="h2--larger">Novostavby</h2>
+        <p>
+            Dle požadavků investora jsme schopní dodat <b>kompletní stavbu na klíč</b>, případně zhotovit ucelenou část. Jsme schopni zajistit také <b>projektovou dokumentaci</b>. Provádíme <b>stavby jak průmyslového typu</b>, tak <b>rodinné stavby</b>. Stavba je prováděna dle projektové dokumentace dodané investorem 
+            a v rozsahu dle smlouvy o dílo, která obsahuje jasně definované ceny dle položkového rozpočtu.
+        </p>
+
+        <ul>
+            <li>zemní práce</li>
+            <li>základové konstukce</li>
+            <li>zděné konstrukce</li>
+            <li>montované konstrukce</li>
+            <li>úpravy povrchů</li>
+            <li>střešní konstukce</li>
+        </ul>
+    </div>
+    <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+        for (const btn of hamburgerButtons) {
+          btn.onclick = (event) => {
+            const menus = document.querySelectorAll(".hamburger-menu-list");
+            for (const menu of menus) {
+              menu.classList.toggle("navbar__menu--hidden");
+            }
+            
+          }
+        }
+      </script>
+    <div class="footer">
+        <p class="footer__title">Plácneme si pro Váš projekt?</p>
+        <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+        <a href="./kontakt.html"><button class="button button--white">Nazávazně poptat</button></a>
+    </div>
+</body>
+</html>

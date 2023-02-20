@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <title>Komunikace</title>
+
+</head>
+<body >
+    <div class="heading--secondary_web">
+    <nav>
+        <div class="images ">
+                <a href="../index.html"><img id="logo" alt="logo" src="../media/logo.png"></a>
+                <a id="hamburger"  class="hamburger-menu" href="javascript:void(0)"><p>MENU</p><img alt="hamburger" src="../media/hamburger.svg"></a>
+                <div id="corner" class="hamburger-menu-list navbar__menu--hidden"></div>
+        </div>
+        
+        <menu class="hamburger-menu-list navbar__menu--hidden">
+            <a href="../index.html"><li>DOMŮ</li></a>
+            <a href="../index.html#sluzby"><li>SLUŽBY</li></a>
+            <a href="./reference.html"><li >REFERENCE</li></a>
+            <a href="./faq.html"><li >O NÁS</li></a>
+            <a href="./kontakt.html"><li id="active">KONTAKT</li></a>
+        </menu>
+    </nav>
+    
+</div>
+    <div class="block--padding">
+            <h2 class="h2--larger">Kontaktujte nás</h2>
+            <p class="p--center">Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na které stavíme</p>   
+    </div>
+        <div class="kontakt--grid">
+            <div class="kontakt--padding block--padding" >
+                    <ul>
+                        <li>+420 775 550 564</li>
+                        <li>stavby@hm-building.cz</li>
+                        <li>Křizánská 12, Liberec XXII-Horní Suchá</li>
+                    </ul>
+            </div>
+            <div class="kontakt__mapa"><img src="../media/mapa.jpg" alt="mapa"></div>
+        </div>
+        
+    <div class="block--padding" >   
+        <h3>Nezávazná poptávka služeb</h3>
+        <p>Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvíme vše potřebné</p>
+        <form >
+            <label for="name">Jméno a příjmení</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="mail">E-mail</label><br>
+            <input type="text" id="mail" name="mail"><br>
+            <label for="phone">Telefon</label><br>
+            <input type="text" id="phone" name="phone"><br>
+            <label for="cars">Poptávaná služba</label><br>
+                <select id="cars" name="cars">
+                <option value="novostaba" selected>Novostaba</option>
+                <option value="pr_stavba">Průmyslová stavba</option>
+                <option value="re_stavba" selected>Rekonstrukce domu a jiné stavby</option>
+                <option value="plocha">Komunikace a zpevnění plochy</option>
+            </select><br>
+            <label id="poznamka">Poznámka</label><br>
+            <textarea name="message" ></textarea><br>
+
+            <button class="button button--orange_filled"><a>Odeslat nezávaznou poptávku</a></button>
+        </form> 
+    </div>
+    <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+        for (const btn of hamburgerButtons) {
+          btn.onclick = (event) => {
+            const menus = document.querySelectorAll(".hamburger-menu-list");
+            for (const menu of menus) {
+              menu.classList.toggle("navbar__menu--hidden");
+            }
+            
+          }
+        }
+      </script>
+      <div class="footer">
+        <p class="footer__title">Plácneme si pro Váš projekt?</p>
+        <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+        <a href="./kontakt.html"><button class="button button--white">Nazávazně poptat</button></a>
+    </div>
+</body>
+</html>

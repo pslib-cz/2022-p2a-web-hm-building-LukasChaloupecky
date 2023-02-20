@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../styles/style.css">
+    <title>Fotografie hasičkské zbrojnice</title>
+</head>
+<body>
+    <div class="heading--secondary_web">
+        <nav>
+            <div class="images ">
+                    <a href="../index.html"><img id="logo" alt="logo" src="../media/logo.png"></a>
+                    <a id="hamburger"  class="hamburger-menu" href="javascript:void(0)"><p>MENU</p><img alt="hamburger" src="../media/hamburger.svg"></a>
+                    <div id="corner" class="hamburger-menu-list navbar__menu--hidden"></div>
+            </div>
+            
+            <menu class="hamburger-menu-list navbar__menu--hidden">
+              <a href="../index.html"><li>DOMŮ</li></a>
+              <a href="../index.html#sluzby"><li>SLUŽBY</li></a>
+              <a href="./reference.html"><li id="active">REFERENCE</li></a>
+              <a href="./faq.html"><li >O NÁS</li></a>
+              <a href="./kontakt.html"><li>KONTAKT</li></a>
+          </menu>
+        </nav>
+        
+    </div>
+    <div class=" block--padding">
+      <h2 class="h2--larger">Hasičská zbrojnice</h2>
+      <p>Celková rekonstrukce hasičská zbrojnice v Rynolticích.</p>
+      <div class="ref_galery">
+        <img alt="hasicka_zbrojnice_foto" src="../media/reference/hasicska-zbrojnice/reference-hz-11.jpeg">
+        <img alt="hasicka_zbrojnice_foto" src="../media/reference/hasicska-zbrojnice/reference-hz-02.jpeg">
+        <img alt="hasicka_zbrojnice_foto" src="../media/reference/hasicska-zbrojnice/reference-hz-12.jpeg">
+        <img alt="hasicka_zbrojnice_foto" src="../media/reference/hasicska-zbrojnice/reference-hz-03.jpeg">
+        <img alt="hasicka_zbrojnice_foto" src="../media/reference/hasicska-zbrojnice/reference-hz-04.jpeg">
+        <img alt="hasicka_zbrojnice_foto" src="../media/reference/hasicska-zbrojnice/reference-hz-05.jpeg">
+        <img alt="hasicka_zbrojnice_foto" src="../media/reference/hasicska-zbrojnice/reference-hz-06.jpeg">
+        <img alt="hasicka_zbrojnice_foto" src="../media/reference/hasicska-zbrojnice/reference-hz-07.jpeg">
+        <img alt="hasicka_zbrojnice_foto" src="../media/reference/hasicska-zbrojnice/reference-hz-08.jpeg">
+        <img alt="hasicka_zbrojnice_foto" src="../media/reference/hasicska-zbrojnice/reference-hz-09.jpeg">
+        <img alt="hasicka_zbrojnice_foto" src="../media/reference/hasicska-zbrojnice/reference-hz-10.jpeg">
+        <img alt="hasicka_zbrojnice_foto" src="../media/reference/hasicska-zbrojnice/reference-hz-18.jpeg">
+        <img alt="hasicka_zbrojnice_foto" src="../media/reference/hasicska-zbrojnice/reference-hz-16.jpeg" class="img--3h">
+        <img alt="hasicka_zbrojnice_foto" src="../media/reference/hasicska-zbrojnice/reference-hz-17.jpeg">
+        <img alt="hasicka_zbrojnice_foto" src="../media/reference/hasicska-zbrojnice/reference-hz-14.jpeg">
+        <img alt="hasicka_zbrojnice_foto" src="../media/reference/hasicska-zbrojnice/reference-hz-01.jpeg">
+        <img alt="hasicka_zbrojnice_foto" src="../media/reference/hasicska-zbrojnice/reference-hz-10.jpeg">
+        <img alt="hasicka_zbrojnice_foto" src="../media/reference/hasicska-zbrojnice/reference-hz-last.jpeg">
+    </div>
+    </div>
+    <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+        for (const btn of hamburgerButtons) {
+          btn.onclick = (event) => {
+            const menus = document.querySelectorAll(".hamburger-menu-list");
+            for (const menu of menus) {
+              menu.classList.toggle("navbar__menu--hidden");
+            }
+            
+          }
+        }
+      </script>
+    <div class="footer">
+      <p class="footer__title">Plácneme si pro Váš projekt?</p>
+      <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+      <a href="./kontakt.html"><button class="button button--white">Nazávazně poptat</button></a>
+  </div>
+</body>
+</html>

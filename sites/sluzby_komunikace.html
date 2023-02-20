@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Komunikace a zpevněných ploch</title>
+
+</head>
+<body>
+    <div class="heading--secondary_web">
+        <nav>
+            <div class="images ">
+                    <a href="../index.html"><img id="logo" alt="logo" src="../media/logo.png"></a>
+                    <a id="hamburger"  class="hamburger-menu" href="javascript:void(0)"><p>MENU</p><img alt="hamburger" src="../media/hamburger.svg"></a>
+                    <div id="corner" class="hamburger-menu-list navbar__menu--hidden"></div>
+            </div>
+            
+            <menu class="hamburger-menu-list navbar__menu--hidden">
+                <a href="../index.html"><li>DOMŮ</li></a>
+                <a href="../index.html#sluzby"><li id="active">SLUŽBY</li></a>
+                <a href="./reference.html"><li >REFERENCE</li></a>
+                <a href="./faq.html"><li >O NÁS</li></a>
+                <a href="./kontakt.html"><li>KONTAKT</li></a>
+            </menu>
+        </nav>
+        
+    </div>
+
+  
+    <div class="block--padding">
+        <h2 class="h2--larger">Komunikace a zpevněné plochy</h2>
+        <p>
+            Komunikace a zpevněné plochy provádíme <b>včetně zemních prací, konstrukcí podkladních</b> a souvisejících objektů, jako jsou <b>odvodnění, zpevnění svahů, opěrné zdi</b> atd.
+        </p>
+        <p><b>Kryt komunikace</b></p>
+        <ul>
+
+            <li>živočišný</li>
+            <li>betonový</li>
+            <li>ulážděný [kámen, betonová ulažba...]</li>
+        </ul>
+        <p>Při realizaci jakékoliv zpevněné plochy <b>dokážeme navrhnout celkovou skladbu konstrukce</b>, s ohledem na její způsob použití a umístění.</p>
+        <ul>
+            <li>zemní práce</li>
+            <li>podklady pod komunikaci</li>
+            <li>komunikace pro pěší i pojezdové</li>
+        </ul>
+        
+    </div>
+    <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+        for (const btn of hamburgerButtons) {
+          btn.onclick = (event) => {
+            const menus = document.querySelectorAll(".hamburger-menu-list");
+            for (const menu of menus) {
+              menu.classList.toggle("navbar__menu--hidden");
+            }
+            
+          }
+        }
+      </script>
+    <div class="footer">
+        <p class="footer__title">Plácneme si pro Váš projekt?</p>
+        <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+        <a href="./kontakt.html"><button class="button button--white">Nazávazně poptat</button></a>
+    </div>
+    </body>
+    </html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Průmyslové stavby</title>
+
+</head>
+<body>
+    <div class="heading--secondary_web">
+        <nav>
+            <div class="images ">
+                    <a href="../index.html"><img id="logo" alt="logo" src="../media/logo.png"></a>
+                    <a id="hamburger"  class="hamburger-menu" href="javascript:void(0)"><p>MENU</p><img alt="hamburger" src="../media/hamburger.svg"></a>
+                    <div id="corner" class="hamburger-menu-list navbar__menu--hidden"></div>
+            </div>
+            
+            <menu class="hamburger-menu-list navbar__menu--hidden">
+                <a href="../index.html"><li>DOMŮ</li></a>
+                <a href="../index.html#sluzby"><li id="active">SLUŽBY</li></a>
+                <a href="./reference.html"><li >REFERENCE</li></a>
+                <a href="./faq.html"><li >O NÁS</li></a>
+                <a href="./kontakt.html"><li>KONTAKT</li></a>
+            </menu>
+        </nav>
+        
+    </div>
+    <div class="block--padding">
+        <h2 class="h2--larger">Průmyslové stavby</h2>
+        <p>Realizujeme <b>průmyslové objekty ocelové konstrukce, lehké ocelové (stanového typu)</b>, z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím <b>se dostáváme na přijatelné ceny.</b></p>
+        <ul >
+            <li>zemní práce</li>
+            <li>základové konstrukce</li>
+            <li>průmyslové haly
+                <ul>
+                    <li>ocelové</li>
+                    <li>ŽLB prefabrikované</li>
+                    <li>lehké ocelové (tzv. stanového typu)</li>
+
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+        for (const btn of hamburgerButtons) {
+          btn.onclick = (event) => {
+            const menus = document.querySelectorAll(".hamburger-menu-list");
+            for (const menu of menus) {
+              menu.classList.toggle("navbar__menu--hidden");
+            }
+            
+          }
+        }
+      </script>
+    <div class="footer">
+        <p class="footer__title">Plácneme si pro Váš projekt?</p>
+        <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+        <a href="#"><button class="button button--white">Nazávazně poptat</button></a>
+    </div>
+    </body>
+    </html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../styles/style.css">
+    <title>Reference</title>
+
+</head>
+<body>
+
+  <div class="heading--secondary_web">
+    <nav>
+        <div class="images ">
+                <a href="../index.html"><img id="logo" alt="logo" src="../media/logo.png"></a>
+                <a id="hamburger"  class="hamburger-menu" href="javascript:void(0)"><p>MENU</p><img alt="hamburger" src="../media/hamburger.svg"></a>
+                <div id="corner" class="hamburger-menu-list navbar__menu--hidden"></div>
+        </div>
+        
+        <menu class="hamburger-menu-list navbar__menu--hidden">
+          <a href="../index.html"><li>DOMŮ</li></a>
+          <a href="../index.html#sluzby"><li>SLUŽBY</li></a>
+          <a href="./reference.html"><li id="active">REFERENCE</li></a>
+          <a href="./faq.html"><li >O NÁS</li></a>
+          <a href="./kontakt.html"><li>KONTAKT</li></a>
+      </menu>
+    </nav>
+    
+</div>
+
+<div class="reference block--padding">
+  <h2 class="h2--larger">Reference</h2>
+  <p>Stojí za námi <b>kvalitně vyhotovené zakázky</b> dle konkrétních požadavků zadavatelů <b>podepřené letitými zkušenostmi ve stavebnictví.</b> To, že <b>>obrátit se na právě nás je vhodná volba potvrdí naši klienti</b>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
+  <div class="reference__galery">
+      <a href="../sites/reference_hasic.html">
+          <figure>
+          <img alt="hasicska_zbrojnice" src="../media/reference/reference-hasicska-zbrojnice-600w.jpg">
+          <figcaption>
+              <h2>Hasičská zbrojnice</h2>
+              <p>celková rekonstrukce</p>
+          </figcaption>
+      </figure>
+  </a>
+  <a href="../sites/reference_pradelna.html">
+      <figure>
+          <img alt="pradelna" src="../media/reference/reference-pradelna-600w.jpg">
+          <figcaption>
+              <h2>Samoobslužná prádelna</h2>
+              <p>stavební úpravy a opravy</p>
+          </figcaption>
+      </figure>
+  </a>
+  <a href="../sites/reference_plochy.html">
+      <figure>
+          <img alt="restyl" src="../media/reference/reference-plocha-600w.jpg">
+          <figcaption>
+              <h2>Venkovní plochy Restyl</h2>
+              <p>provedení venkovnách ploch</p>
+          </figcaption>
+      </figure>
+  </a>
+  </div>
+</div>
+
+
+<script>
+  const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+  for (const btn of hamburgerButtons) {
+    btn.onclick = (event) => {
+      const menus = document.querySelectorAll(".hamburger-menu-list");
+      for (const menu of menus) {
+        menu.classList.toggle("navbar__menu--hidden");
+      }
+      
+    }
+  }
+</script>
+<div class="footer">
+  <p class="footer__title">Plácneme si pro Váš projekt?</p>
+  <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+  <a href="./kontakt.html"><button class="button button--white">Nazávazně poptat</button></a>
+</div>
+</body>
+</html>
